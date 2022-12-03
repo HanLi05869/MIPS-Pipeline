@@ -1,0 +1,568 @@
+$date
+	Wed Oct 19 22:22:43 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench_ $end
+$var reg 1 ! clock $end
+$var reg 1 " reset $end
+$scope module mips_i $end
+$var wire 5 # WriteRegD [4:0] $end
+$var wire 5 $ WriteRegE [4:0] $end
+$var wire 1 % bgtz $end
+$var wire 1 & blez $end
+$var wire 1 ' bltz $end
+$var wire 1 ( branch $end
+$var wire 1 ) branchne $end
+$var wire 1 " clk $end
+$var wire 1 * lbu $end
+$var wire 1 + pcsrcD $end
+$var wire 1 ! reset $end
+$var wire 32 , zeroimmE [31:0] $end
+$var wire 32 - zeroimmD [31:0] $end
+$var wire 32 . writedataM [31:0] $end
+$var wire 1 / usignedE $end
+$var wire 1 0 usignedD $end
+$var wire 64 1 useless_wire [63:0] $end
+$var wire 32 2 upperimmE [31:0] $end
+$var wire 32 3 upperimmD [31:0] $end
+$var wire 1 4 stallF $end
+$var wire 1 5 stallE $end
+$var wire 1 6 stallD $end
+$var wire 32 7 srcbE [31:0] $end
+$var wire 32 8 srcbD [31:0] $end
+$var wire 32 9 srcb2E [31:0] $end
+$var wire 32 : srcaE [31:0] $end
+$var wire 32 ; srcaD [31:0] $end
+$var wire 32 < signimmE [31:0] $end
+$var wire 32 = signimmD [31:0] $end
+$var wire 1 > signE $end
+$var wire 1 ? signD $end
+$var wire 5 @ shamtE [4:0] $end
+$var wire 1 A regwriteW $end
+$var wire 1 B regwriteM $end
+$var wire 1 C regwriteE $end
+$var wire 1 D regwriteD $end
+$var wire 2 E regdstD [1:0] $end
+$var wire 32 F readdataW [31:0] $end
+$var wire 32 G readdataM [31:0] $end
+$var wire 32 H pcplus4W [31:0] $end
+$var wire 32 I pcplus4M [31:0] $end
+$var wire 32 J pcplus4F [31:0] $end
+$var wire 32 K pcplus4E [31:0] $end
+$var wire 32 L pcplus4D [31:0] $end
+$var wire 32 M pcnextjF [31:0] $end
+$var wire 32 N pcnextbrF [31:0] $end
+$var wire 32 O pcnextF [31:0] $end
+$var wire 32 P pcjumpD [31:0] $end
+$var wire 32 Q pcbranchD [31:0] $end
+$var wire 32 R pcF [31:0] $end
+$var wire 1 S mulE $end
+$var wire 1 T mulD $end
+$var wire 1 U mtloE $end
+$var wire 1 V mtloD $end
+$var wire 1 W mthiE $end
+$var wire 1 X mthiD $end
+$var wire 1 Y mfloW $end
+$var wire 1 Z mfloM $end
+$var wire 1 [ mfloE $end
+$var wire 1 \ mfloD $end
+$var wire 1 ] mfhiW $end
+$var wire 1 ^ mfhiM $end
+$var wire 1 _ mfhiE $end
+$var wire 1 ` mfhiD $end
+$var wire 2 a memtoregW [1:0] $end
+$var wire 1 b lowriteW $end
+$var wire 1 c lowriteM $end
+$var wire 1 d lowriteE $end
+$var wire 1 e lowriteD $end
+$var wire 32 f loout [31:0] $end
+$var wire 1 g lhuM $end
+$var wire 1 h lhuE $end
+$var wire 1 i lhuD $end
+$var wire 1 j lbuM $end
+$var wire 1 k lbuE $end
+$var wire 1 l lbuD $end
+$var wire 1 m jumpD $end
+$var wire 1 n jrD $end
+$var wire 1 o jalrD $end
+$var wire 1 p jalW $end
+$var wire 1 q jalM $end
+$var wire 1 r jalE $end
+$var wire 1 s jalD $end
+$var wire 32 t instrF [31:0] $end
+$var wire 32 u instrD [31:0] $end
+$var wire 32 v innerpcF [31:0] $end
+$var wire 1 w hiwriteW $end
+$var wire 1 x hiwriteM $end
+$var wire 1 y hiwriteE $end
+$var wire 1 z hiwriteD $end
+$var wire 32 { hiout [31:0] $end
+$var wire 32 | hi_loW [31:0] $end
+$var wire 32 } hi_loM [31:0] $end
+$var wire 32 ~ hi_loE [31:0] $end
+$var wire 32 !" hi_loD [31:0] $end
+$var wire 32 "" halfwordW [31:0] $end
+$var wire 32 #" halfwordM [31:0] $end
+$var wire 2 $" forwardlo [1:0] $end
+$var wire 2 %" forwardhi [1:0] $end
+$var wire 3 &" forwardb [2:0] $end
+$var wire 3 '" forwarda [2:0] $end
+$var wire 1 (" divE $end
+$var wire 1 )" divD $end
+$var wire 32 *" byteW [31:0] $end
+$var wire 32 +" byteM [31:0] $end
+$var wire 1 ," branchneD $end
+$var wire 1 -" branchD $end
+$var wire 1 ." bltzD $end
+$var wire 1 /" blezD $end
+$var wire 1 0" bgtzD $end
+$var wire 2 1" alusrcE [1:0] $end
+$var wire 2 2" alusrcD [1:0] $end
+$var wire 32 3" aluoutW [31:0] $end
+$var wire 32 4" aluoutM [31:0] $end
+$var wire 32 5" aluoutE [31:0] $end
+$var wire 5 6" WriteRegW [4:0] $end
+$var wire 5 7" WriteRegM [4:0] $end
+$var wire 2 8" Sh_bM [1:0] $end
+$var wire 2 9" Sh_bE [1:0] $end
+$var wire 2 :" Sh_bD [1:0] $end
+$var wire 32 ;" Res_loW [31:0] $end
+$var wire 32 <" Res_loM [31:0] $end
+$var wire 32 =" Res_loE [31:0] $end
+$var wire 32 >" Res_hiW [31:0] $end
+$var wire 32 ?" Res_hiM [31:0] $end
+$var wire 32 @" Res_hiE [31:0] $end
+$var wire 32 A" Reg_resW [31:0] $end
+$var wire 1 B" PCSrcD $end
+$var wire 2 C" MemtoRegM [1:0] $end
+$var wire 2 D" MemtoRegE [1:0] $end
+$var wire 2 E" MemtoRegD [1:0] $end
+$var wire 1 F" MemWriteM $end
+$var wire 1 G" MemWriteE $end
+$var wire 1 H" MemWriteD $end
+$var wire 32 I" BD [31:0] $end
+$var wire 6 J" ALUControlE [5:0] $end
+$var wire 6 K" ALUControlD [5:0] $end
+$var wire 32 L" AD [31:0] $end
+$scope module ALU $end
+$var wire 1 M" usigned $end
+$var wire 5 N" shamt [4:0] $end
+$var wire 32 O" ReadData2 [31:0] $end
+$var wire 32 P" ReadData1 [31:0] $end
+$var wire 6 Q" ALUOp [5:0] $end
+$var reg 32 R" res [31:0] $end
+$var reg 1 S" zero $end
+$upscope $end
+$scope module CPU $end
+$var wire 6 T" func [5:0] $end
+$var wire 6 U" op [5:0] $end
+$var wire 32 V" instr [31:0] $end
+$var reg 6 W" ALUControl [5:0] $end
+$var reg 1 X" Iand $end
+$var reg 1 Y" Inor $end
+$var reg 1 Z" Ior $end
+$var reg 1 [" Ixor $end
+$var reg 1 H" MemWriteD $end
+$var reg 2 \" MemtoRegD [1:0] $end
+$var reg 1 ]" Rtype $end
+$var reg 2 ^" Sh_bD [1:0] $end
+$var reg 1 _" add $end
+$var reg 1 `" addi $end
+$var reg 1 a" addiu $end
+$var reg 1 b" addu $end
+$var reg 2 c" alusrc [1:0] $end
+$var reg 1 d" andi $end
+$var reg 1 e" beq $end
+$var reg 1 f" bgez $end
+$var reg 1 g" bgtz $end
+$var reg 1 0" bgtzD $end
+$var reg 1 h" blez $end
+$var reg 1 /" blezD $end
+$var reg 1 i" bltz $end
+$var reg 1 ." bltzD $end
+$var reg 1 j" bne $end
+$var reg 1 -" branchD $end
+$var reg 1 ," branchneD $end
+$var reg 1 k" div $end
+$var reg 1 )" divD $end
+$var reg 1 l" divu $end
+$var reg 1 z hiwriteD $end
+$var reg 1 m" j $end
+$var reg 1 n" jal $end
+$var reg 1 s jalD $end
+$var reg 1 o" jalr $end
+$var reg 1 o jalrD $end
+$var reg 1 p" jr $end
+$var reg 1 n jrD $end
+$var reg 1 m jumpD $end
+$var reg 1 q" lb $end
+$var reg 1 r" lbu $end
+$var reg 1 l lbuD $end
+$var reg 1 s" lh $end
+$var reg 1 t" lhu $end
+$var reg 1 i lhuD $end
+$var reg 1 e lowriteD $end
+$var reg 1 u" lui $end
+$var reg 1 v" lw $end
+$var reg 1 w" mfhi $end
+$var reg 1 ` mfhiD $end
+$var reg 1 x" mflo $end
+$var reg 1 \ mfloD $end
+$var reg 1 y" mthi $end
+$var reg 1 X mthiD $end
+$var reg 1 z" mtlo $end
+$var reg 1 V mtloD $end
+$var reg 1 T mulD $end
+$var reg 1 {" mult $end
+$var reg 1 |" multu $end
+$var reg 1 }" ori $end
+$var reg 2 ~" regdst [1:0] $end
+$var reg 1 D regwriteD $end
+$var reg 1 !# sb $end
+$var reg 1 "# sh $end
+$var reg 1 ? signD $end
+$var reg 1 ## sll $end
+$var reg 1 $# sllv $end
+$var reg 1 %# slt $end
+$var reg 1 &# slti $end
+$var reg 1 '# sltiu $end
+$var reg 1 (# sltu $end
+$var reg 1 )# sra $end
+$var reg 1 *# srav $end
+$var reg 1 +# srl $end
+$var reg 1 ,# srlv $end
+$var reg 1 -# sub $end
+$var reg 1 .# subu $end
+$var reg 1 /# sw $end
+$var reg 1 0 usigned $end
+$var reg 1 0# xori $end
+$upscope $end
+$scope module DM $end
+$var wire 1 " clk $end
+$var wire 1 1# data_h $end
+$var wire 1 2# data_b $end
+$var wire 32 3# data [31:0] $end
+$var wire 32 4# addr [31:0] $end
+$var wire 2 5# Sh_bM [1:0] $end
+$var wire 1 F" MemWriteM $end
+$var reg 32 6# data_out [31:0] $end
+$var integer 32 7# i [31:0] $end
+$upscope $end
+$scope module EXT $end
+$var wire 16 8# A [15:0] $end
+$var reg 32 9# signextend [31:0] $end
+$var reg 32 :# upperimm [31:0] $end
+$var reg 32 ;# zeroextend [31:0] $end
+$upscope $end
+$scope module EX_MEM_REG $end
+$var wire 5 <# WriteRegE [4:0] $end
+$var wire 32 =# aluoutE [31:0] $end
+$var wire 1 C regwriteE $end
+$var wire 1 [ mfloE $end
+$var wire 1 _ mfhiE $end
+$var wire 1 d lowriteE $end
+$var wire 1 h lhuE $end
+$var wire 1 k lbuE $end
+$var wire 1 r jalE $end
+$var wire 1 y hiwriteE $end
+$var wire 32 ># hi_loE [31:0] $end
+$var wire 2 ?# Sh_bE [1:0] $end
+$var wire 32 @# Res_loE [31:0] $end
+$var wire 32 A# Res_hiE [31:0] $end
+$var wire 32 B# RD2 [31:0] $end
+$var wire 32 C# PCplusE [31:0] $end
+$var wire 2 D# MemtoRegE [1:0] $end
+$var wire 1 G" MemWriteE $end
+$var reg 1 F" MemWriteM $end
+$var reg 2 E# MemtoRegM [1:0] $end
+$var reg 32 F# PCplusM [31:0] $end
+$var reg 32 G# Res_hiM [31:0] $end
+$var reg 32 H# Res_loM [31:0] $end
+$var reg 2 I# Sh_bM [1:0] $end
+$var reg 5 J# WriteRegM [4:0] $end
+$var reg 32 K# aluoutM [31:0] $end
+$var reg 32 L# hi_loM [31:0] $end
+$var reg 1 x hiwriteM $end
+$var reg 1 q jalM $end
+$var reg 1 j lbuM $end
+$var reg 1 g lhuM $end
+$var reg 1 c lowriteM $end
+$var reg 1 ^ mfhiM $end
+$var reg 1 Z mfloM $end
+$var reg 1 B regwriteM $end
+$var reg 32 M# writedataM [31:0] $end
+$upscope $end
+$scope module Forwarda $end
+$var wire 32 N# aluoutE [31:0] $end
+$var wire 32 O# aluoutM [31:0] $end
+$var wire 32 P# hi_loM [31:0] $end
+$var wire 32 Q# readdataM [31:0] $end
+$var wire 3 R# op [2:0] $end
+$var wire 32 S# hi_low [31:0] $end
+$var wire 32 T# halfdataM [31:0] $end
+$var wire 32 U# byteM [31:0] $end
+$var wire 32 V# A [31:0] $end
+$var reg 32 W# res [31:0] $end
+$upscope $end
+$scope module Forwardb $end
+$var wire 32 X# aluoutE [31:0] $end
+$var wire 32 Y# aluoutM [31:0] $end
+$var wire 32 Z# hi_loM [31:0] $end
+$var wire 32 [# readdataM [31:0] $end
+$var wire 3 \# op [2:0] $end
+$var wire 32 ]# hi_low [31:0] $end
+$var wire 32 ^# halfdataM [31:0] $end
+$var wire 32 _# byteM [31:0] $end
+$var wire 32 `# B [31:0] $end
+$var reg 32 a# res [31:0] $end
+$upscope $end
+$scope module GPR $end
+$var wire 5 b# A [4:0] $end
+$var wire 5 c# B [4:0] $end
+$var wire 1 " clk $end
+$var wire 1 p jalW $end
+$var wire 5 d# WriteRegW [4:0] $end
+$var wire 32 e# Reg_resW [31:0] $end
+$var wire 1 A RegWriteW $end
+$var wire 32 f# PCplusW [31:0] $end
+$var reg 32 g# RD1 [31:0] $end
+$var reg 32 h# RD2 [31:0] $end
+$var reg 32 i# result [31:0] $end
+$var integer 32 j# i [31:0] $end
+$upscope $end
+$scope module HL_ID $end
+$var wire 1 " clk $end
+$var wire 1 b lowriteW $end
+$var wire 1 w hiwriteW $end
+$var wire 32 k# Res_loW [31:0] $end
+$var wire 32 l# Res_hiW [31:0] $end
+$var reg 32 m# Hi_reg [31:0] $end
+$var reg 32 n# Lo_reg [31:0] $end
+$var reg 32 o# hiout [31:0] $end
+$var reg 32 p# loout [31:0] $end
+$upscope $end
+$scope module HazardUnit $end
+$var wire 2 q# MemtoRegM [1:0] $end
+$var wire 5 r# WriteRegE [4:0] $end
+$var wire 5 s# WriteRegM [4:0] $end
+$var wire 1 x hiwriteM $end
+$var wire 1 c lowriteM $end
+$var wire 1 ^ mfhiM $end
+$var wire 1 Z mfloM $end
+$var wire 1 B regwriteM $end
+$var wire 5 t# rsD [4:0] $end
+$var wire 5 u# rtD [4:0] $end
+$var wire 1 C regwriteE $end
+$var wire 1 [ mfloE $end
+$var wire 1 _ mfhiE $end
+$var wire 1 d lowriteE $end
+$var wire 1 y hiwriteE $end
+$var wire 2 v# MemtoRegE [1:0] $end
+$var reg 3 w# forwarda [2:0] $end
+$var reg 3 x# forwardb [2:0] $end
+$var reg 2 y# forwardhi [1:0] $end
+$var reg 2 z# forwardlo [1:0] $end
+$var reg 1 6 stallD $end
+$var reg 1 5 stallE $end
+$var reg 1 4 stallF $end
+$upscope $end
+$scope module ID_EX_REG $end
+$var wire 32 {# AD [31:0] $end
+$var wire 6 |# ALUControl [5:0] $end
+$var wire 32 }# BD [31:0] $end
+$var wire 1 H" MemWriteD $end
+$var wire 2 ~# MemtoRegD [1:0] $end
+$var wire 2 !$ Sh_bD [1:0] $end
+$var wire 5 "$ WriteRegD [4:0] $end
+$var wire 2 #$ alusrc [1:0] $end
+$var wire 1 )" divD $end
+$var wire 1 z hiwriteD $end
+$var wire 1 $$ jal $end
+$var wire 1 o jalr $end
+$var wire 1 l lbuD $end
+$var wire 1 i lhuD $end
+$var wire 1 e lowriteD $end
+$var wire 1 ` mfhiD $end
+$var wire 1 \ mfloD $end
+$var wire 1 X mthiD $end
+$var wire 1 V mtloD $end
+$var wire 1 T mulD $end
+$var wire 1 D regwriteD $end
+$var wire 5 %$ shamtD [10:6] $end
+$var wire 1 ? signD $end
+$var wire 32 &$ signimmD [31:0] $end
+$var wire 1 5 stallE $end
+$var wire 32 '$ upperimmD [31:0] $end
+$var wire 1 0 usigned $end
+$var wire 32 ($ zeroimmD [31:0] $end
+$var wire 32 )$ hi_loD [31:0] $end
+$var wire 32 *$ PCplusD [31:0] $end
+$var reg 32 +$ AE [31:0] $end
+$var reg 6 ,$ ALUControlE [5:0] $end
+$var reg 32 -$ BE [31:0] $end
+$var reg 1 G" MemWriteE $end
+$var reg 2 .$ MemtoRegE [1:0] $end
+$var reg 32 /$ PCplusE [31:0] $end
+$var reg 2 0$ Sh_bE [1:0] $end
+$var reg 5 1$ WriteRegE [4:0] $end
+$var reg 2 2$ alusrcE [1:0] $end
+$var reg 1 (" divE $end
+$var reg 32 3$ hi_loE [31:0] $end
+$var reg 1 y hiwriteE $end
+$var reg 1 r jalE $end
+$var reg 1 k lbuE $end
+$var reg 1 h lhuE $end
+$var reg 1 d lowriteE $end
+$var reg 1 _ mfhiE $end
+$var reg 1 [ mfloE $end
+$var reg 1 W mthiE $end
+$var reg 1 U mtloE $end
+$var reg 1 S mulE $end
+$var reg 1 C regwriteE $end
+$var reg 5 4$ shamtE [10:6] $end
+$var reg 1 > signE $end
+$var reg 32 5$ signimmE [31:0] $end
+$var reg 32 6$ upperimmE [31:0] $end
+$var reg 1 / usignedE $end
+$var reg 32 7$ zeroimmE [31:0] $end
+$upscope $end
+$scope module IF_ID_REG $end
+$var wire 1 8$ flushD $end
+$var wire 1 6 stallD $end
+$var wire 32 9$ instrF [31:0] $end
+$var wire 32 :$ PCplusF [31:0] $end
+$var reg 32 ;$ PCplusD [31:0] $end
+$var reg 32 <$ instrD [31:0] $end
+$upscope $end
+$scope module IM $end
+$var wire 32 =$ addr [31:0] $end
+$var reg 32 >$ IS [31:0] $end
+$var integer 32 ?$ i [31:0] $end
+$upscope $end
+$scope module MDunit $end
+$var wire 32 @$ AE [31:0] $end
+$var wire 32 A$ BE [31:0] $end
+$var wire 1 (" divE $end
+$var wire 1 W mthiE $end
+$var wire 1 U mtloE $end
+$var wire 1 S mulE $end
+$var wire 1 > signE $end
+$var reg 32 B$ Res_hiE [31:0] $end
+$var reg 32 C$ Res_loE [31:0] $end
+$var reg 64 D$ res [63:0] $end
+$upscope $end
+$scope module MEM_WB_REG $end
+$var wire 2 E$ MemtoRegM [1:0] $end
+$var wire 32 F$ PCplusM [31:0] $end
+$var wire 32 G$ Res_hiM [31:0] $end
+$var wire 32 H$ Res_loM [31:0] $end
+$var wire 5 I$ WriteRegM [4:0] $end
+$var wire 32 J$ aluoutM [31:0] $end
+$var wire 32 K$ hi_loM [31:0] $end
+$var wire 1 x hiwriteM $end
+$var wire 1 q jalM $end
+$var wire 1 c lowriteM $end
+$var wire 1 ^ mfhiM $end
+$var wire 1 Z mfloM $end
+$var wire 32 L$ readdataM [31:0] $end
+$var wire 1 B regwriteM $end
+$var wire 32 M$ halfwordM [31:0] $end
+$var wire 32 N$ byteM [31:0] $end
+$var reg 32 O$ PCplusW [31:0] $end
+$var reg 32 P$ Res_hiW [31:0] $end
+$var reg 32 Q$ Res_loW [31:0] $end
+$var reg 5 R$ WriteRegW [4:0] $end
+$var reg 32 S$ aluoutW [31:0] $end
+$var reg 32 T$ byteW [31:0] $end
+$var reg 32 U$ halfwordW [31:0] $end
+$var reg 32 V$ hi_loW [31:0] $end
+$var reg 1 w hiwriteW $end
+$var reg 1 p jalW $end
+$var reg 1 b lowriteW $end
+$var reg 2 W$ memtoregW [1:0] $end
+$var reg 1 ] mfhiW $end
+$var reg 1 Y mfloW $end
+$var reg 32 X$ readdataW [31:0] $end
+$var reg 1 A regwriteW $end
+$upscope $end
+$scope module NPC $end
+$var wire 32 Y$ muxinstr_3 [31:0] $end
+$var reg 32 Z$ next_pc [31:0] $end
+$upscope $end
+$scope module PC $end
+$var wire 1 " clk $end
+$var wire 32 [$ next_pc [31:0] $end
+$var wire 1 ! reset $end
+$var wire 1 4 stallF $end
+$var reg 32 \$ PCplus [31:0] $end
+$var reg 32 ]$ pc [31:0] $end
+$upscope $end
+$scope module PCplus_or_PCbranch $end
+$var wire 32 ^$ PCplus [31:0] $end
+$var wire 1 + beq $end
+$var wire 32 _$ muxinstr_1 [31:0] $end
+$var wire 32 `$ PCbranch [31:0] $end
+$upscope $end
+$scope module Regdst $end
+$var wire 5 a$ rdD [4:0] $end
+$var wire 2 b$ regdst [1:0] $end
+$var wire 5 c$ rtD [4:0] $end
+$var reg 5 d$ WriteRegD [4:0] $end
+$upscope $end
+$scope module byteWord $end
+$var wire 32 e$ aluoutM [31:0] $end
+$var wire 32 f$ data_out [31:0] $end
+$var wire 1 * lbu $end
+$var wire 1 g$ data_3 $end
+$var wire 1 h$ data_2 $end
+$var wire 1 i$ data_1 $end
+$var wire 1 j$ data_0 $end
+$var reg 32 k$ byteM [31:0] $end
+$var reg 16 l$ tmp [15:0] $end
+$upscope $end
+$scope module halfword $end
+$var wire 32 m$ aluoutM [31:0] $end
+$var wire 32 n$ data_out [31:0] $end
+$var wire 1 g lhu $end
+$var wire 1 o$ data_low $end
+$var wire 1 p$ data_high $end
+$var reg 32 q$ halfwordM [31:0] $end
+$var reg 16 r$ tmp [15:0] $end
+$upscope $end
+$scope module muxALU $end
+$var wire 32 s$ BE [31:0] $end
+$var wire 2 t$ alusrcE [1:0] $end
+$var wire 32 u$ signimmE [31:0] $end
+$var wire 32 v$ upperimmR [31:0] $end
+$var wire 32 w$ zeroimmE [31:0] $end
+$var reg 32 x$ B [31:0] $end
+$upscope $end
+$scope module muxHL_ID $end
+$var wire 32 y$ Res_hiE [31:0] $end
+$var wire 32 z$ Res_hiM [31:0] $end
+$var wire 2 {$ forwardhi [1:0] $end
+$var wire 2 |$ forwardlo [1:0] $end
+$var wire 32 }$ hiout [31:0] $end
+$var wire 32 ~$ loout [31:0] $end
+$var wire 1 ` mfhiD $end
+$var wire 1 \ mfloD $end
+$var wire 32 !% res_loE [31:0] $end
+$var wire 32 "% res_loM [31:0] $end
+$var reg 32 #% hiD [31:0] $end
+$var reg 32 $% hi_loD [31:0] $end
+$var reg 32 %% loD [31:0] $end
+$upscope $end
+$scope module muxWB $end
+$var wire 2 &% MemtoRegW [1:0] $end
+$var wire 32 '% aluoutW [31:0] $end
+$var wire 32 (% byteW [31:0] $end
+$var wire 32 )% halfwordW [31:0] $end
+$var wire 32 *% hi_loW [31:0] $end
+$var wire 1 ] mfhiW $end
+$var wire 1 Y mfloW $end
+$var wire 32 +% readdataW [31:
